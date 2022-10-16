@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Needs Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Pre-course Needs Analysis Form</h1>
+    <div id="form-outer">
+      <p id="description">
+        This questionnaire will help us design an individual course matching
+        your needs.
+      </p>
+      <form id="survey-form" method="" action="">
+        <!-- method and action should be specified -->
+        <div class="row">
+          <div class="left">
+            <label id="name-label" for="name">* Name: </label>
+          </div>
+          <div class="right">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="input-field"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label id="email-label" for="email">* Email: </label>
+          </div>
+          <div class="right">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-field"
+              required
+              placeholder="Enter your Email"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label id="number-label" for="age">* Age: </label>
+          </div>
+          <div class="right">
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="1"
+              max="100"
+              class="input-field"
+              placeholder="Age"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="purpose"
+              >Why do you want to take English lessons?</label
+            >
+          </div>
+          <div class="right">
+            <select id="dropdown" name="purpose" class="dropdown">
+              <option disabled selected value>Select an option</option>
+              <option value="speaking">
+                I need to practice speaking and conversation skills
+              </option>
+              <option value="general">
+                I would like to increase my overall English level
+              </option>
+              <option value="exam">I am preparing for an exam</option>
+              <option value="move">
+                I am going to immegrate or move to an English speaking country
+              </option>
+              <option value="business">Business English</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="level"
+              >* How would you describe your courrent level?</label
+            >
+          </div>
+          <div class="right">
+            <ul>
+              <li class="radio">
+                <label
+                  >Elementary<input
+                    name="radio-buttons"
+                    value="a1"
+                    type="radio"
+                    class="userLevel"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >Pre-Intermediate<input
+                    name="radio-buttons"
+                    value="a2"
+                    type="radio"
+                    class="userLevel"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >Intermediate<input
+                    name="radio-buttons"
+                    value="b1"
+                    type="radio"
+                    class="userLevel"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >Upper Intermediate<input
+                    name="radio-buttons"
+                    value="b2"
+                    type="radio"
+                    class="userLevel"
+                /></label>
+              </li>
+              <li class="radio">
+                <label
+                  >Advanced<input
+                    name="radio-buttons"
+                    value="c1"
+                    type="radio"
+                    class="userLevel"
+                /></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="preferences"
+              >What are the areas you want to focus more on
+            </label>
+          </div>
+          <div class="right">
+            <ul id="preferences">
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="1"
+                    type="checkbox"
+                    class="userArea"
+                  />Speaking</label
+                >
+              </li>
+              <li class="checkbox">
+                <input
+                  name="prefer"
+                  value="2"
+                  type="checkbox"
+                  class="userArea"
+                />Listening
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="3"
+                    type="checkbox"
+                    class="userArea"
+                  />Reading</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="4"
+                    type="checkbox"
+                    class="userArea"
+                  />Writing</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="5"
+                    type="checkbox"
+                    class="userArea"
+                  />Grammar</label
+                >
+              </li>
+              <li class="checkbox">
+                <label
+                  ><input
+                    name="prefer"
+                    value="6"
+                    type="checkbox"
+                    class="userArea"
+                  />Vocabulary</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="left">
+            <label for="comments">What are your areas of interest?</label>
+          </div>
+          <div class="right">
+            <textarea
+              id="comments"
+              class="input-field"
+              style="height: 70px; resize: vertical"
+              name="comment"
+              placeholder="what are the things you like to talk about most..."
+            ></textarea>
+          </div>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

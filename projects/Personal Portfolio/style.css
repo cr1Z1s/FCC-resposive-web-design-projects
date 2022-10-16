@@ -88,6 +88,11 @@ header h1 {
   background: #3b5998;
   text-decoration: none;
 }
+.linkedin {
+  color: white;
+  background: #0072b1;
+  text-decoration: none;
+}
 #links {
   padding-bottom: 40px;
 }

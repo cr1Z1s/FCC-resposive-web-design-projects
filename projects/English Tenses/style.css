@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+/*navbar*/
+#navbar {
+  position: fixed;
+  max-width: 350px;
+  height: 100%;
+  overflow: scroll;
+}
+#navbar * {
+  display: block;
+  text-align: center;
+}
+#navbar header {
+  margin: 10px;
+}
+#navbar .nav-links {
+}
+#navbar a {
+  text-decoration: none;
+  padding: 5px;
+  border-top: 1px solid black;
+  color: #004f99;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+header {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Merriweather";
+}
+/*main doc*/
+#main-doc {
+  margin-left: 350px;
+  border-left: 1px solid black;
+  padding: 20px;
+}
+code {
+  margin-left: 30px;
+  color: #00996f;
+  font-weight: bold;
+}
+h3 {
+  color: #00996f;
+  text-transform: capitalize;
+}
+#main-doc .use-case li {
+  margin-top: 15px;
+}
+
+/*media query*/
+
+@media only screen and (max-width: 900px) {
+  #navbar {
+    max-width: 250px;
+  }
+  #main-doc {
+    margin-left: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #navbar {
+    position: static;
+    text-align: center;
+    max-width: 100%;
+  }
+  #navbar a {
+    display: inline;
+  }
+  #navbar a {
+    text-decoration: none;
+    padding: 5px;
+    border: none;
+  }
+  #main-doc {
+    margin-left: 0px;
+    border: none;
+  }
+}
