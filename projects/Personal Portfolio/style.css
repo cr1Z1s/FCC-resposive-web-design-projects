@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono");
+/*general*/
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  margin: auto;
+  max-width: 850px;
+}
+
+/*navbar*/
+nav {
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+  width: 80%;
+  line-height: 50px;
+  border-bottom: solid 2px #cc0000;
+  max-width: 850px;
+}
+nav a {
+  color: #cc0000;
+  font-size: 18px;
+}
+/*header*/
+header {
+  height: 100vh;
+  background: #fff;
+  position: relative;
+}
+header h1 {
+  font-family: "Roboto Mono", monospace;
+}
+.vertical {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+}
+
+/*projects*/
+#projects {
+  border-top: solid 2px #6600cc;
+}
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  border: 2px solid black;
+  margin: 0 10px;
+  margin-bottom: 30px;
+  flex-basis: 400px;
+}
+.project * {
+  display: block;
+  margin: auto;
+}
+.project a {
+  line-height: 45px;
+  color: #cc0000;
+  font-size: 17px;
+}
+.project iframe {
+  height: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/*social links*/
+.social-links a {
+  width: 100px;
+  padding: 11px;
+  margin: 10px;
+}
+.github {
+  color: white;
+  background: #000;
+  text-decoration: none;
+}
+.facebook {
+  color: white;
+  background: #3b5998;
+  text-decoration: none;
+}
+#links {
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  body,
+  nav {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body,
+  nav {
+    width: 100%;
+    min-width: 420px;
+  }
+}
